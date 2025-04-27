@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Employees Backend API
+  description: API для управления информацией о сотрудниках
+  version: 1.0.0
+servers:
+  - url: /employees-be
+paths:
+  /employees/current:
+    get:
+      summary: Получить информацию о текущем сотруднике
+      description: Этот метод возвращает данные о текущем сотруднике.
+      responses:
+        '200':
+          description: Успешный ответ с информацией о сотруднике
+          content:
+            application/json:
+              schema:
+                $ref: 'models/CurrentEmployeeRsDto.yaml'
+        '401':
+          description: Пользователь не аутентифицирован
+  /employees/currentUserRights:
+    get:
+      summary: Получить права текущего пользователя
+      responses:
+        '200':
+          description: Успешный ответ с массивом прав пользователя
+          content:
+            application/json:
+              schema:
+                $ref: 'models/UserRightsRsDto.yaml'
+        '401':
+          description: Пользователь не аутентифицирован

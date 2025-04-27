@@ -1,0 +1,11 @@
+Table employee {
+  first_name varchar [note: "Имя сотрудника"]
+  last_name varchar
+  middle_name varchar
+  personal_number varchar
+
+  Note Пользователи
+  indexes {
+    personal_number [name: "personal_number_index"]
+  }
+}
