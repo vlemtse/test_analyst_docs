@@ -1,0 +1,12 @@
+title: CurrentTaskResponse
+description: Response model for current task
+properties:
+  taskId:
+    type: string
+    description: Уникальный идентификатор задачи
+  title:
+    type: string
+    description: Название задачи
+  description:
+    type: string
+    description: Описание задачи

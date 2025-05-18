@@ -1,0 +1,9 @@
+title: NewTaskResponse
+properties:
+  taskId:
+    type: string
+    description: Уникальный идентификатор новой задачи
+  status:
+    type: string
+    enum: [new, pending]
+    description: Статус новой задачи

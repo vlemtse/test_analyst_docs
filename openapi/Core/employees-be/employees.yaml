@@ -31,3 +31,16 @@ paths:
                 $ref: 'models/UserRightsRsDto.yaml'
         '401':
           description: Пользователь не аутентифицирован
+  /employees:
+    post:
+      summary: Добавить нового сотрудника
+      description: Этот метод позволяет добавлять новых сотрудников в систему.
+      responses:
+        '201':
+          description: Новый сотрудник успешно добавлен
+          content:
+            application/json:
+              schema:
+                $ref: 'models/NewEmployeeRsDto.yaml'
+        '400':
+          description: Некорректные данные запроса

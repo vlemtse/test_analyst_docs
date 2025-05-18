@@ -1,0 +1,10 @@
+title: UserRightsResponse
+properties:
+  userId:
+    type: string
+    description: Уникальный идентификатор пользователя
+  rights:
+    type: array
+    items:
+      type: string
+    description: список прав пользователя над задачами

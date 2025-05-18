@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Tasks Backend API
+  description: API для управления задачами
+  version: 1.0.0
+servers:
+  - url: /tasks-be
+paths:
+  /tasks/current:
+    get:
+      summary: Получить список текущих задач
+      description: Возвращает данные о текущих задачах
+      responses:
+        '200':
+          description: Успешный ответ с массивом задач
+  /tasks/new:
+    post:
+      summary: Добавить новую задачу
+      description: Это метод позволяет добавлять новые задачи
+      responses:
+        '201':
+          description: Новая задача успешно создана

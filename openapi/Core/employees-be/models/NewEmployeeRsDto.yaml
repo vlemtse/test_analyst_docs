@@ -1,0 +1,13 @@
+type: object
+additionalProperties: false
+properties:
+  id:
+    type: string
+    description: Уникальный идентификатор сотрудника
+  fullName:
+    type: string
+    description: Полное имя сотрудника
+  birthday:
+    type: string
+    format: date
+    description: Дата рождения сотрудника
